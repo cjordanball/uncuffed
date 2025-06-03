@@ -7,7 +7,6 @@ import styles from './mainGrid.module.css';
 
 export const MainGrid = () => {
 	const { itHappenedItems, IDidItItems } = useContext(DataContext);
-	const pressedArray: string[] = [];
 
 	const printScore = () => {
 		console.log('I did these: ', IDidItItems.join(', '));

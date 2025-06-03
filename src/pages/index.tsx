@@ -1,5 +1,5 @@
 'use clien';
-import { DataContext, DataContextProvider } from '../store/data-context';
+import { DataContextProvider } from '../store/data-context';
 import { MainGrid } from '../components/mainGrid';
 import styles from './page.module.css';
 

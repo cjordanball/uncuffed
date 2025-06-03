@@ -1,5 +1,5 @@
 'use client';
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import Image from 'next/image';
 import up from '../../../public/images/up.svg';
 import down from '../../../public/images/down.svg';
