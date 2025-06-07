@@ -1,3 +1,4 @@
-.test {
-	background-color: pink;
+.container {
+	width: 100px;
+	overflow: hidden;
 }

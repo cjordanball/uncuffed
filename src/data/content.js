@@ -16,7 +16,7 @@ export const contentData = [
 	[
 		'Takes astrology too seriously',
 		'Only texts late at night',
-		null,
+		'Every little thing (s)he does is magic!',
 		'Always "too busy"',
 		'Afraid to be chalant',
 	],

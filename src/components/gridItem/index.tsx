@@ -1,9 +1,7 @@
 'use client';
 import { useContext } from 'react';
-// import NextImage from 'next/image';
-// const Image = NextImage.default;
-import up from '../../../public/images/up.svg';
-import down from '../../../public/images/down.svg';
+import Up from '../../../public/images/up.svg';
+import Down from '../../../public/images/down.svg';
 import { DataContext } from '../../store/data-context';
 import styles from './gridItem.module.css';
 
@@ -51,16 +49,14 @@ export const GridItem = ({ text, gridLocation }: GridItemProps) => {
 	return (
 		<div className={`${styles.container} ${styles[getColor()]}`}>
 			<div className={styles.header}>
-				<img
-					src={up}
-					alt='Yep, happened to me.'
-					title='Yep, happened to me.'
+				<Up
+					className={styles.icon}
+					alt='Happened to me'
 					onClick={() => handleClick('suffered')}
 				/>
-				<img
-					src={down}
-					alt='I did it.'
-					title='I did it.'
+				<Down
+					className={styles.icon}
+					alt='Yeh, I did that'
 					onClick={() => handleClick('did')}
 				/>
 			</div>

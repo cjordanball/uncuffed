@@ -6,9 +6,8 @@ import styles from './page.module.css';
 export default function Page() {
 	return (
 		<DataContextProvider>
-			<div className={styles.test}>
+			<div className={styles.container}>
 				<MainGrid />
-				<h1>TEST</h1>
 			</div>
 		</DataContextProvider>
 	);

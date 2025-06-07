@@ -1,10 +1,12 @@
 .container {
+	width: 20vw;
+	height: 20vw;
 	display: flex;
 	flex-direction: column;
-	min-height: 200px;
-	background-color: aliceblue;
+	background-color: #eee;
 	box-sizing: border-box;
 	border: 1px solid #3c3c3c;
+	font-size: 6px;
 }
 
 .header {
@@ -12,7 +14,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 20px;
+	padding: 5px;
+}
+.icon {
+	color: black;
+	height: 10px;
+	aspect-ratio: 1;
 }
 .item {
 	flex: 4;
@@ -20,19 +27,20 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* padding: 10px; */
+	padding: 10px;
 }
 
 .itemHappened {
-	background: red;
+	background: rgb(21, 190, 125);
+	color: black;
 }
 
 .itemDid {
-	background-color: navy;
+	background-color: rgb(202, 18, 18);
 }
 
 .itemBoth {
-	background-color: green;
+	background-color: rgb(208, 211, 31);
 }
 
 .footer {

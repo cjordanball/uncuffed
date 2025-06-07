@@ -1,6 +1,18 @@
-.container {
-	width: 100%;
+.gridContainer {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	background-color: pink;
+	/* grid-template-columns: (50px, 50px, 50px, 50px, 50px);
+	grid-template-rows: (50px, 50px, 50px, 50px, 50px); */
+	grid-template-areas:
+		'item item item item item'
+		'item item item item item'
+		'item item item item item'
+		'item item item item item'
+		'item item item item item';
+}
+
+.buttonArea {
+	display: flex;
+	height: 100px;
+	align-items: center;
+	justify-content: center;
 }
