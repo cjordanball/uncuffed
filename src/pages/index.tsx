@@ -1,4 +1,4 @@
-'use clien';
+'use client';
 import { DataContextProvider } from '../store/data-context';
 import { MainGrid } from '../components/mainGrid';
 import { Instructions } from '../components/instructions';
