@@ -6,13 +6,7 @@ import Down from '../../../public/images/down.svg';
 import { DataContext } from '../../store/data-context';
 import styles from './gridItem.module.css';
 
-interface GridItemProps {
-	text: string;
-	gridLocation: string;
-	key: string;
-}
-
-export const GridItem = ({ text, gridLocation }: GridItemProps) => {
+export const GridItem = ({ text, gridLocation }) => {
 	const {
 		itHappenedItems,
 		toggleHappenedOn,
@@ -22,7 +16,7 @@ export const GridItem = ({ text, gridLocation }: GridItemProps) => {
 		toggleDidItOff,
 	} = useContext(DataContext);
 
-	const handleClick = (e: 'did' | 'suffered') => {
+	const handleClick = (e) => {
 		if (e === 'suffered') {
 			if (itHappenedItems.includes(gridLocation)) {
 				toggleHappenedOff(gridLocation);
