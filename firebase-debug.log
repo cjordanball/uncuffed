@@ -1,0 +1,132 @@
+[debug] [2025-06-08T18:25:44.391Z] ----------------------------------------------------------------------
+[debug] [2025-06-08T18:25:44.393Z] Command:       /nix/store/rbdrkcs5kkwpalxcd7c6bnm33lk2955n-nodejs-20.19.0/bin/node /nix/store/nh3zwzkz6wh6qa7bd2ywzr7irjij7j1i-firebase-tools-14.3.1/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-06-08T18:25:44.394Z] CLI Version:   14.3.1
+[debug] [2025-06-08T18:25:44.394Z] Platform:      linux
+[debug] [2025-06-08T18:25:44.394Z] Node Version:  v20.19.0
+[debug] [2025-06-08T18:25:44.394Z] Time:          Sun Jun 08 2025 18:25:44 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-06-08T18:25:44.395Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-08T18:25:44.857Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-08T18:25:44.858Z] > authorizing via signed-in user (cjordanball@gmail.com)
+[debug] [2025-06-08T18:25:44.858Z] [iam] checking project uncuffed-2e6ed for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-06-08T18:25:44.859Z] Checked if tokens are valid: true, expires at: 1749410153439
+[debug] [2025-06-08T18:25:44.860Z] Checked if tokens are valid: true, expires at: 1749410153439
+[debug] [2025-06-08T18:25:44.861Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/uncuffed-2e6ed:testIamPermissions [none]
+[debug] [2025-06-08T18:25:44.861Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/uncuffed-2e6ed:testIamPermissions x-goog-quota-user=projects/uncuffed-2e6ed
+[debug] [2025-06-08T18:25:44.861Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/uncuffed-2e6ed:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-08T18:25:45.050Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/uncuffed-2e6ed:testIamPermissions 200
+[debug] [2025-06-08T18:25:45.050Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/uncuffed-2e6ed:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-08T18:25:45.055Z] Checked if tokens are valid: true, expires at: 1749410153439
+[debug] [2025-06-08T18:25:45.056Z] Checked if tokens are valid: true, expires at: 1749410153439
+[debug] [2025-06-08T18:25:45.056Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/uncuffed-2e6ed [none]
+[debug] [2025-06-08T18:25:45.304Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/uncuffed-2e6ed 200
+[debug] [2025-06-08T18:25:45.304Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/uncuffed-2e6ed {"projectId":"uncuffed-2e6ed","projectNumber":"582611699576","displayName":"uncuffed","name":"projects/uncuffed-2e6ed","resources":{"hostingSite":"uncuffed-2e6ed"},"state":"ACTIVE","etag":"1_ecc46fb1-83d2-476e-9221-2bfb603197f0"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-06-08T18:25:53.750Z] Checked if tokens are valid: true, expires at: 1749410153439
+[debug] [2025-06-08T18:25:53.752Z] Checked if tokens are valid: true, expires at: 1749410153439
+[debug] [2025-06-08T18:25:53.752Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/uncuffed-2e6ed/sites/uncuffed-2e6ed [none]
+[debug] [2025-06-08T18:25:54.033Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/uncuffed-2e6ed/sites/uncuffed-2e6ed 200
+[debug] [2025-06-08T18:25:54.034Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/uncuffed-2e6ed/sites/uncuffed-2e6ed {"name":"projects/uncuffed-2e6ed/sites/uncuffed-2e6ed","defaultUrl":"https://uncuffed-2e6ed.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.3.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] Failed to compile.
+
+./app/page.tsx
+Module not found: Can't resolve './page.module.css'
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[info] 
+
+[info] > Build failed because of webpack errors
+
+[debug] [2025-06-08T18:26:01.134Z] Error: ENOENT: no such file or directory, open '/home/user/uncuffed/hosting/.next/server/middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-06-08T18:28:31.723Z] ----------------------------------------------------------------------
+[debug] [2025-06-08T18:28:31.726Z] Command:       /nix/store/rbdrkcs5kkwpalxcd7c6bnm33lk2955n-nodejs-20.19.0/bin/node /nix/store/nh3zwzkz6wh6qa7bd2ywzr7irjij7j1i-firebase-tools-14.3.1/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-06-08T18:28:31.726Z] CLI Version:   14.3.1
+[debug] [2025-06-08T18:28:31.727Z] Platform:      linux
+[debug] [2025-06-08T18:28:31.727Z] Node Version:  v20.19.0
+[debug] [2025-06-08T18:28:31.727Z] Time:          Sun Jun 08 2025 18:28:31 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-06-08T18:28:31.727Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-08T18:28:32.194Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-08T18:28:32.195Z] > authorizing via signed-in user (cjordanball@gmail.com)
+[debug] [2025-06-08T18:28:32.195Z] [iam] checking project uncuffed-2e6ed for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-06-08T18:28:32.196Z] Checked if tokens are valid: true, expires at: 1749410153439
+[debug] [2025-06-08T18:28:32.197Z] Checked if tokens are valid: true, expires at: 1749410153439
+[debug] [2025-06-08T18:28:32.198Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/uncuffed-2e6ed:testIamPermissions [none]
+[debug] [2025-06-08T18:28:32.198Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/uncuffed-2e6ed:testIamPermissions x-goog-quota-user=projects/uncuffed-2e6ed
+[debug] [2025-06-08T18:28:32.198Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/uncuffed-2e6ed:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-08T18:28:32.385Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/uncuffed-2e6ed:testIamPermissions 200
+[debug] [2025-06-08T18:28:32.385Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/uncuffed-2e6ed:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-08T18:28:32.386Z] Checked if tokens are valid: true, expires at: 1749410153439
+[debug] [2025-06-08T18:28:32.386Z] Checked if tokens are valid: true, expires at: 1749410153439
+[debug] [2025-06-08T18:28:32.389Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/uncuffed-2e6ed [none]
+[debug] [2025-06-08T18:28:32.652Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/uncuffed-2e6ed 200
+[debug] [2025-06-08T18:28:32.652Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/uncuffed-2e6ed {"projectId":"uncuffed-2e6ed","projectNumber":"582611699576","displayName":"uncuffed","name":"projects/uncuffed-2e6ed","resources":{"hostingSite":"uncuffed-2e6ed"},"state":"ACTIVE","etag":"1_ecc46fb1-83d2-476e-9221-2bfb603197f0"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-06-08T18:28:40.136Z] Checked if tokens are valid: true, expires at: 1749410153439
+[debug] [2025-06-08T18:28:40.136Z] Checked if tokens are valid: true, expires at: 1749410153439
+[debug] [2025-06-08T18:28:40.137Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/uncuffed-2e6ed/sites/uncuffed-2e6ed [none]
+[debug] [2025-06-08T18:28:40.640Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/uncuffed-2e6ed/sites/uncuffed-2e6ed 200
+[debug] [2025-06-08T18:28:40.641Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/uncuffed-2e6ed/sites/uncuffed-2e6ed {"name":"projects/uncuffed-2e6ed/sites/uncuffed-2e6ed","defaultUrl":"https://uncuffed-2e6ed.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.3.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully in 6.0s
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+
+[info] ../src/components/footer/index.tsx:10:6
+Type error: 'Image' cannot be used as a JSX component.
+  Its type 'ForwardRefExoticComponent<Omit<DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>, "ref" | ... 5 more ... | "srcSet"> & { ...; } & RefAttributes<...>>' is not a valid JSX element type.
+    Type 'ForwardRefExoticComponent<Omit<DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>, "ref" | ... 5 more ... | "srcSet"> & { ...; } & RefAttributes<...>>' is not assignable to type '(props: any, deprecatedLegacyContext?: any) => ReactNode'.
+      Type 'import("/home/user/uncuffed/node_modules/@types/react/index").ReactNode' is not assignable to type 'React.ReactNode'.
+        Type 'bigint' is not assignable to type 'ReactNode'.
+
+   8 | 		<div className={styles.colorSection}>
+   9 | 			<div className={`${styles.colorBlock} ${styles.colorGreen}`}>
+> 10 | 				<Image src={Up} className={styles.icon} alt='Happened to me' />
+     | 				 ^
+  11 | 			</div>
+  12 | 		</div>
+  13 | 		<span>Happened to me!</span>
+
+[info] Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2025-06-08T18:29:04.234Z] Error: ENOENT: no such file or directory, open '/home/user/uncuffed/hosting/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
