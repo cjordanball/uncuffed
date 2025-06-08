@@ -53,13 +53,15 @@ export const GridItem = ({ text, gridLocation }: GridItemProps) => {
 				<Image
 					src={Up}
 					alt='Happened to me'
-					className={styles.icon}
+					height={8}
+					width={8}
 					onClick={() => handleClick('suffered')}
 				/>
 				<Image
 					src={Down}
+					height={8}
+					width={8}
 					alt='Yeh, I did that'
-					className={styles.icon}
 					onClick={() => handleClick('did')}
 				/>
 			</div>
