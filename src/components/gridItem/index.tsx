@@ -50,13 +50,15 @@ export const GridItem = ({ text, gridLocation }: GridItemProps) => {
 		<div className={`${styles.container} ${styles[getColor()]}`}>
 			<div className={styles.header}>
 				<Up
-					className={styles.icon}
+					src='/images/Up.svg'
 					alt='Happened to me'
+					className={styles.icon}
 					onClick={() => handleClick('suffered')}
 				/>
 				<Down
-					className={styles.icon}
+					src='/images/Down.svg'
 					alt='Yeh, I did that'
+					className={styles.icon}
 					onClick={() => handleClick('did')}
 				/>
 			</div>

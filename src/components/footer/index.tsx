@@ -1,4 +1,5 @@
 import styles from './footer.module.css';
+import Image from 'next/image';
 import Up from '../../../public/images/up.svg';
 import Down from '../../../public/images/down.svg';
 
@@ -27,7 +28,3 @@ export const Footer = () => (
 		<span>I&apos;ve given and gotten!</span>
 	</div>
 );
-
-{
-	/* <div className={`${styles.container} ${styles[getColor()]}`}></div>; */
-}

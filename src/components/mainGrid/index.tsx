@@ -1,5 +1,5 @@
 'use client';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { DataContext } from '../../store/data-context';
 import { GridItem } from '../gridItem';
 import { Footer } from '../footer';
@@ -8,8 +8,10 @@ import styles from './mainGrid.module.css';
 
 export const MainGrid = () => {
 	const { itHappenedItems, IDidItItems } = useContext(DataContext);
+	const [userSelected, setUserSelected] = useState(false);
 
 	const printScore = () => {
+		setUserSelected(() => true);
 		console.log('I did these: ', IDidItItems.join(', '));
 		console.log('I suffered these: ', itHappenedItems.join(', '));
 	};
@@ -57,6 +59,13 @@ export const MainGrid = () => {
 			<div className={styles.buttonArea}>
 				<button onClick={() => printScore()}>Check It Out</button>
 			</div>
+			{userSelected && (
+				<div>
+					<span>{IDidItItems.join(',')}</span>
+					<br />
+					<span>{itHappenedItems.join(',')}</span>
+				</div>
+			)}
 		</>
 	);
 };
