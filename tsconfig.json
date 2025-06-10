@@ -21,7 +21,8 @@
 		"next-env.d.ts",
 		"**/*.ts",
 		"**/*.tsx",
-		"src/components/footer/index.jsx"
+		"src/components/footer/index.jsx",
+		"src/components/gridItem/index.jsx"
 	],
 	"exclude": ["node_modules"]
 }
