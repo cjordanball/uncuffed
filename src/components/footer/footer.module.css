@@ -40,5 +40,6 @@
 .icon {
 	color: black;
 	height: 12px;
+	width: auto;
 	aspect-ratio: 1;
 }

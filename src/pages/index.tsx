@@ -11,13 +11,13 @@ export default function Page() {
 		<DataContextProvider>
 			<div className={styles.container}>
 				<Image
+					priority
 					alt='uncuffed background'
 					src={uncuffed}
 					className={styles.image}
 				/>
 				<div className={styles.sheet}></div>
 				<div className={styles.overlay}>
-					{/* <div className={styles.heading}></div> */}
 					<Instructions />
 					<div className={styles.containor}>
 						<MainGrid />
