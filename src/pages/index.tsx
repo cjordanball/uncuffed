@@ -1,6 +1,7 @@
 'use client';
 import { DataContextProvider } from '../store/data-context';
 import { MainGrid } from '../components/mainGrid';
+import { ImageContainer } from '../components/imageContainer';
 import Image from 'next/image';
 import uncuffed from '../../public/images/uncuffed.jpg';
 import { Instructions } from '../components/instructions';
@@ -10,12 +11,7 @@ export default function Page() {
 	return (
 		<DataContextProvider>
 			<div className={styles.container}>
-				<Image
-					priority
-					alt='uncuffed background'
-					src={uncuffed}
-					className={styles.image}
-				/>
+				<ImageContainer />
 				<div className={styles.sheet}></div>
 				<div className={styles.overlay}>
 					<Instructions />
