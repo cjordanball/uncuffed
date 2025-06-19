@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import uncuffed from '../../../public/images/uncuffed.jpg';
+import uncuffed from '../../../public/images/uncuffed.svg';
 import styles from './imageContainer.module.css';
 
 export const ImageContainer = () => {
