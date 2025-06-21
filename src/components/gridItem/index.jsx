@@ -3,8 +3,8 @@ import { useContext } from 'react';
 import Image from 'next/image';
 import Up from '../../../public/images/up.svg';
 import UpBlack from '../../../public/images/upBlack.svg';
-import Down from '../../../public/images/down.svg';
-import DownBlack from '../../../public/images/downBlack.svg';
+// import Down from '../../../public/images/down.svg';
+// import DownBlack from '../../../public/images/downBlack.svg';
 import { DataContext } from '../../store/data-context';
 import styles from './gridItem.module.css';
 
@@ -44,21 +44,7 @@ export const GridItem = ({ text, gridLocation }) => {
 	};
 
 	return (
-		<div className={`${styles.container} ${styles[getColor()]}`}>
-			<div className={styles.header}>
-				<Image
-					src={getColor() === 'itemHappened' ? UpBlack : Up}
-					alt='Happened to me'
-					className={styles.icon}
-					onClick={() => handleClick('suffered')}
-				/>
-				<Image
-					src={getColor() === 'itemDid' ? DownBlack : Down}
-					className={styles.icon}
-					alt='Yeh, I did that'
-					onClick={() => handleClick('did')}
-				/>
-			</div>
+		<div onClick={() => handleClick('suffered')} className={`${styles.container} ${styles[getColor()]}`}>
 			<div className={styles.item}>
 				<div>{text}</div>
 			</div>

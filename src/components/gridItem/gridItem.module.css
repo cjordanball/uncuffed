@@ -5,7 +5,8 @@
 	flex-direction: column;
 	box-sizing: border-box;
 	border: 1px solid #fff;
-	font-size: 9px;
+	font-size: 10px;
+	color: white;
 }
 
 .header {

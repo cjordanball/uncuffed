@@ -2,7 +2,7 @@
 import { useContext, useState } from 'react';
 import { DataContext } from '../../store/data-context';
 import { GridItem } from '../gridItem';
-import { Footer } from '../footer';
+// import { Footer } from '../footer';
 import { contentData } from '../../data/content';
 import styles from './mainGrid.module.css';
 
@@ -17,7 +17,7 @@ export const MainGrid = () => {
 	};
 
 	return (
-		<>
+		<div className={styles.container}>
 			<div className={styles.gridContainer}>
 				<div className={styles.row}>
 					<GridItem key='00' text={contentData[0][0]} gridLocation='00' />
@@ -55,17 +55,14 @@ export const MainGrid = () => {
 					<GridItem key='44' text={contentData[4][4]} gridLocation='44' />
 				</div>
 			</div>
-			<Footer />
-			<div className={styles.buttonArea}>
-				<button onClick={() => printScore()}>Check It Out</button>
-			</div>
-			{userSelected && (
-				<div>
-					<span>{IDidItItems.join(',')}</span>
-					<br />
-					<span>{itHappenedItems.join(',')}</span>
+				<div className={styles.buttonArea}>
+					<button className={styles.button} onClick={() => printScore()}>Check It Out</button>
 				</div>
-			)}
-		</>
+				{userSelected && (
+					<div>
+						<span>{IDidItItems.join(',')}</span>
+					</div>
+				)}
+			</div>
 	);
 };

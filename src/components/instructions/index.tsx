@@ -5,7 +5,7 @@ export const Instructions = () => (
 		<p>
 			We&apos;ve all been there. From behavior that makes us wonder if we should
 			contact the police to silly annoyances, there seem to be a million ways a
-			first date can rub us the wrong way. Some of these are listed below and,
+			first date can rub us the wrong way. We Some of these are listed below and,
 			if we are being honest, we might recognize ourselves in some of these
 			cards.
 		</p>
